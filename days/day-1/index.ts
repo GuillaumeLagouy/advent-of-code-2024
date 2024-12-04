@@ -1,12 +1,17 @@
-const utils = require('../../utils.ts');
+export {};
 
-const result = utils.readFile('./input.txt');
+import { readFile } from '../../utils';
+
+const result = readFile('./input.txt');
 result.then((data: string) => {
   // Process input
   const regex = /\d+/g;
-  const numbers = data.match(regex).map(Number);
+  const numbers = data.match(regex)?.map(Number);
   const arr1: number[] = [];
   const arr2: number[] = [];
+  if (numbers === null || numbers === undefined) {
+    return;
+  }
   numbers.forEach((number, index) => {
     if (index % 2 === 0) {
       arr1.push(number);

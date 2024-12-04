@@ -1,4 +1,4 @@
-const fs = require('node:fs/promises');
+import { promises as fs } from 'node:fs';
 
 export async function readFile(filename: string): Promise<string> {
   try {

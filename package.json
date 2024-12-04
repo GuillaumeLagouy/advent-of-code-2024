@@ -2,12 +2,11 @@
   "name": "advent_of_code_2024",
   "version": "1.0.0",
   "description": "Advent of code 2024",
-  "author": "",
+  "type": "module",
+  "author": "Guillaume Lagouy",
   "license": "ISC",
   "devDependencies": {
-    "@types/node": "^22.10.1",
-    "ts-node": "^10.9.2",
-    "tslib": "^2.8.1",
+    "tsx": "^4.19.2",
     "typescript": "^5.7.2"
   }
 }
